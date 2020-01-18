@@ -1,7 +1,4 @@
-/CONTRIBUTING.md
-/bootstrap/compiled.php
 /*.tar.gz
-composer.phar
 .DS_Store
 ._.DS_Store
 Thumbs.db

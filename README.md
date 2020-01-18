@@ -7,15 +7,17 @@
 `$ docker-compose stop`
 
 ### Login Container
-`$ docker-compose exec cltw_web bash`
+`$ docker-compose exec web bash`
 
 ### Install Laravel inside container
 `$ composer create-project --prefer-dist laravel/laravel .`
 
-### Launch Developmet Server
+### Launch Development Server
+`$ cd /var/www/html/cltw/laravel`
+
 `$ php artisan serve --host 0.0.0.0 --port 8081`
 
-### Setup npm
-`$ docker-compose exec cltw_web npm install`
+### Setup npm, and install Vue + Bootstrap-Vue
+`$ npm install`
 
-`$ docker-compose exec cltw_web npm run watch`
+`$ npm install -D vue bootstrap-vue`
