@@ -1,18 +1,21 @@
 version: '3'
 services:
-  cltw_web:
+  web:
+    container_name: cltw_web
     build: .
     volumes:
       - ./web:/var/www/html/cltw
     ports:
       - 8081:8081
       - 3000:3000
-  cltw_db:
-    image: mysql:5.7.29
+  db:
+    container_name: cltw_db
+    image: mysql:5.6.47
     restart: always
     environment:
-      POSTGRES_PASSWORD: secret
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: cltw
     volumes:
       - ./database:/var/lib/mysql/data
     ports:
-      - 5434:5432
+      - 3306:3306
