@@ -3,10 +3,10 @@
 ## Dependencies
 - PHP 7.4
     - Composer
-    - Laravel 6 (Larvel Mix)
+    - Laravel 6 (Laravel Mix)
 - JavaScript
     - Node.js(npm)
-    - Vue, Bootstrap-Vue, BrowserSync
+    - Vue, Bootstrap-Vue, Vue Router, BrowserSync
 - Docker
 
 ## Installation
@@ -37,8 +37,12 @@ open `http://0.0.0.0:8081` in your browser.
 
 ### 6. Run BrowserSync
 
-`npm run watch`
+`$ npm run watch`
 
 When it will finish, retype this command again.
 
 After that, open `http://0.0.0.0:3000` with BrowserSync in your browser.
+
+### 7. Install Vue Router
+
+`npm install -D vue-router`
