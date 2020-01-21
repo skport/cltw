@@ -45,4 +45,9 @@ After that, open `http://0.0.0.0:3000` with BrowserSync in your browser.
 
 ### 7. Install Vue Router
 
-`npm install -D vue-router`
+`$ npm install -D vue-router`
+
+### 8. Install [laravel/socialite](https://github.com/laravel/socialite)
+`$ cd /var/www/html/cltw/laravel`
+
+`$ composer require laravel/socialite`
